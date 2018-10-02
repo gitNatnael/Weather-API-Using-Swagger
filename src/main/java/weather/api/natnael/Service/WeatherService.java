@@ -6,8 +6,6 @@ import org.springframework.stereotype.Service;
 import weather.api.natnael.Model.Weather;
 import weather.api.natnael.Repository.WeatherRepository;
 
-import java.util.List;
-
 @Service
 public class WeatherService {
 

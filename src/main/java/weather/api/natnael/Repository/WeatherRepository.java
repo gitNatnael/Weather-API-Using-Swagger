@@ -17,26 +17,18 @@ import java.util.Scanner;
 public class WeatherRepository {
 
     public Weather getWeatherApi(String cityName) throws Exception {
-        String url1 = "http://api.apixu.com/v1/current.json?key=da0451937f6149aea2f220806180909&q=";
-        String url = url1 + cityName.replace(" ", "-");
+        String urlApixu = "http://api.apixu.com/v1/current.json?key=da0451937f6149aea2f220806180909&q=";
+        String url = urlApixu + cityName.replace(" ", "-");
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
         con.setRequestMethod("GET");
         BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
-        String inputLine;
-        StringBuffer response = new StringBuffer();
-        if ((inputLine = in.readLine()) != null) {
-            response.append(inputLine);
-        }
-        String jsonResponse = response.toString();
-        System.out.println(response.toString());
+        String inputLine=in.readLine();
         ObjectMapper mapper = new ObjectMapper();
-        WeatherInfo weatherInfo = mapper.readValue(jsonResponse, WeatherInfo.class);
+        WeatherInfo weatherInfo = mapper.readValue(inputLine, WeatherInfo.class);
         Weather weather = new Weather(weatherInfo.getLocation().getName(), weatherInfo.getLocation().getCountry(), weatherInfo.getCurrent().getTemp_c());
         return weather;
     }
-
-
 
 /*
     //it is fake data to check when the controller return the api in json format

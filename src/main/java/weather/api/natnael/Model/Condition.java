@@ -1,8 +1,6 @@
 package weather.api.natnael.Model;
 
-/**
- * Created by natna on 2018-10-02.
- */
+
 public class Condition {
 
     private double temp_c;

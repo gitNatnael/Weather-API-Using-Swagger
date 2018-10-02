@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.*;
 import weather.api.natnael.Model.Weather;
 import weather.api.natnael.Service.WeatherService;
 
-import java.util.List;
 
 @RestController
 @RequestMapping("/weather")

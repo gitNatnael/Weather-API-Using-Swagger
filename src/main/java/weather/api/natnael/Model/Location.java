@@ -1,8 +1,5 @@
 package weather.api.natnael.Model;
 
-/**
- * Created by natna on 2018-10-02.
- */
 public class Location {
 
     private String name;
