@@ -14,7 +14,7 @@ public class WeatherService {
     private WeatherRepository weatherRepository;
 
     public Weather getWeatherData(String city) throws Exception {
-        return weatherRepository.getWeatherApi(city);
+        return weatherRepository.getWeatherJSonData(city);
     }
 
 }
