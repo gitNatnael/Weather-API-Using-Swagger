@@ -13,6 +13,9 @@ public class Weather {
         this.temp = temp;
     }
 
+    public Weather() {
+    }
+
     public long getCityID() {
         return CityID;
     }
