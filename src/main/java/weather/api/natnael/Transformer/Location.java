@@ -1,4 +1,4 @@
-package weather.api.natnael.Model;
+package weather.api.natnael.Transformer;
 
 public class Location {
 

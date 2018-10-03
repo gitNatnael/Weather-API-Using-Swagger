@@ -1,17 +1,16 @@
-package weather.api.natnael.Model;
+package weather.api.natnael.Transformer;
 
 
-public class Condition {
-
+public class Current {
     private double temp_c;
     private Condition condition;
 
-    public Condition(double temp_c, Condition condition) {
+    public Current(double temp_c, Condition condition) {
         this.temp_c = temp_c;
         this.condition = condition;
     }
 
-    public Condition() {
+    public Current() {
     }
 
     public double getTemp_c() {
