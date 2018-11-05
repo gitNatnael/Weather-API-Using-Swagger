@@ -5,6 +5,7 @@ public class Condition {
 
     private double temp_c;
     private Condition condition;
+    private double uv;
 
     public Condition(double temp_c, Condition condition) {
         this.temp_c = temp_c;
@@ -29,4 +30,5 @@ public class Condition {
     public void setCondition(Condition condition) {
         this.condition = condition;
     }
+
 }

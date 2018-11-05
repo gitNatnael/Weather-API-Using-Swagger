@@ -32,7 +32,7 @@ public class WeatherRepository {
             return null;
         return weatherRepository.getWeatherData(zipCodeAddress);
     }
-    
+
     private Weather getWeatherData(String parameter) throws Exception {
         weatherInfo = weatherRepository.getWeatherInfo(parameter);
         Weather weather = new Weather(weatherInfo.getLocation().getName(), weatherInfo.getLocation().getCountry(), weatherInfo.getCurrent().getTemp_c());
