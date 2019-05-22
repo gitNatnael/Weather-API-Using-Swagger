@@ -12,7 +12,7 @@ public class WeatherTest {
 
     @Before
     public void setup() {
-        weather = new Weather("Stockholm", "Sweden", 22.12);
+        weather = new Weather("Stockholm", "Sweden", 22.12, 2.0);
     }
 
     @Test
