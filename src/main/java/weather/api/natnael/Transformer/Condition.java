@@ -6,6 +6,9 @@ public class Condition {
     private double temp_c;
     private Condition condition;
     private double uv;
+    private double gust_mph;
+    private double gust_kph;
+
 
     public Condition(double temp_c, Condition condition) {
         this.temp_c = temp_c;

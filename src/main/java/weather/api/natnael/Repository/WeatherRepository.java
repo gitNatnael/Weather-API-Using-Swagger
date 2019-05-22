@@ -35,7 +35,7 @@ public class WeatherRepository {
 
     private Weather getWeatherData(String parameter) throws Exception {
         weatherInfo = weatherRepository.getWeatherInfo(parameter);
-        Weather weather = new Weather(weatherInfo.getLocation().getName(), weatherInfo.getLocation().getCountry(), weatherInfo.getCurrent().getTemp_c());
+        Weather weather = new Weather(weatherInfo.getLocation().getName(), weatherInfo.getLocation().getCountry(), weatherInfo.getCurrent().getTemp_c(),weatherInfo.getCurrent().getUv());
         return weather;
     }
 

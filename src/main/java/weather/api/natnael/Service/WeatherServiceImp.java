@@ -6,6 +6,8 @@ import org.springframework.stereotype.Service;
 import weather.api.natnael.Model.Weather;
 import weather.api.natnael.Repository.WeatherRepository;
 
+
+
 @Service
 public class WeatherServiceImp implements WeatherService {
 
@@ -19,4 +21,5 @@ public class WeatherServiceImp implements WeatherService {
     public Weather getWeatherDataByZipCode(long zipCode) throws Exception {
         return weatherRepository.getWeatherDataZipCode(zipCode);
     }
+
 }
